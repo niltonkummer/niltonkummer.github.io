@@ -19,7 +19,7 @@ export function AboutSection() {
             <div className="flex-shrink-0">
               <Avatar className="w-48 h-48 border-4 border-primary/20">
                 <AvatarImage 
-                  src="https://avatars.githubusercontent.com/u/2161865?v=4" 
+                  src="https://avatars.githubusercontent.com/u/823477?v=4" 
                   alt="Nilton Kummer"
                 />
                 <AvatarFallback className="text-4xl font-bold">NK</AvatarFallback>

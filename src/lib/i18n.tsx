@@ -80,8 +80,8 @@ const translations: Record<Language, Translations> = {
     },
     about: {
       title: 'About Me',
-      description: "I'm a passionate software developer with expertise in building robust, scalable applications. With years of experience in backend development, cloud infrastructure, and DevOps, I help businesses transform their ideas into reliable software solutions.",
-      currentFocus: 'Currently focusing on Terraform, Kubernetes, Rust, and Java. Always learning and exploring new technologies.',
+      description: "Software Developer with relevant experience in backend software development and implementation of scalable web solutions. Well-versed in technology including relational databases, cloud-based providers, Golang and AWS, with extensive knowledge of complex developments, integration, automated tests, configuration, deployment, and system architecture using SOLID principles. Excellent coding skills, capable of quickly learning new technologies, with the ability to motivate and manage teams to build successful software programmes and effectively track changes, using the Agile, Kanban, XP and Scrum Methodology.",
+      currentFocus: "I am always interested in hearing from former colleagues and like-minded individuals, so if you would like to connect, please feel free to do so and don't hesitate to contact me.",
       location: 'Based in Portugal 🇵🇹 | CrossFit enthusiast 🏋️',
     },
     skills: {
@@ -139,8 +139,8 @@ const translations: Record<Language, Translations> = {
     },
     about: {
       title: 'Sobre Mim',
-      description: 'Sou um desenvolvedor de software apaixonado com experiência em construir aplicações robustas e escaláveis. Com anos de experiência em desenvolvimento backend, infraestrutura cloud e DevOps, ajudo empresas a transformar suas ideias em soluções de software confiáveis.',
-      currentFocus: 'Atualmente focado em Terraform, Kubernetes, Rust e Java. Sempre aprendendo e explorando novas tecnologias.',
+      description: 'Desenvolvedor de Software com experiência relevante em desenvolvimento de software backend e implementação de soluções web escaláveis. Versado em tecnologias incluindo bases de dados relacionais, provedores de nuvem, Golang e AWS, com amplo conhecimento em desenvolvimentos complexos, integração, testes automatizados, configuração, implantação e arquitetura de sistemas usando princípios SOLID. Excelentes habilidades de codificação, capaz de aprender rapidamente novas tecnologias, com capacidade de motivar e gerenciar equipes para construir programas de software bem-sucedidos e acompanhar efetivamente mudanças, usando as metodologias Agile, Kanban, XP e Scrum.',
+      currentFocus: 'Estou sempre interessado em ouvir de ex-colegas e pessoas com interesses semelhantes, então se você gostaria de se conectar, sinta-se à vontade e não hesite em me contatar.',
       location: 'Baseado em Portugal 🇵🇹 | Entusiasta de CrossFit 🏋️',
     },
     skills: {

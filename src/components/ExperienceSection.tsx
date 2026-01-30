@@ -1,8 +1,15 @@
 import { useLanguage } from '@/lib/i18n';
+import worten from '@/assets/logos/worten.png';
+import leboncoin from '@/assets/logos/leboncoin.png';
+import dock from '@/assets/logos/dock.png';
+import azion from '@/assets/logos/azion.png';
+import dinamize from '@/assets/logos/dinamize.png';
 
 const experiences = [
   {
+    logo: leboncoin,
     company: 'Leboncoin',
+    link: 'https://leboncoin.fr',
     role: {
       en: 'Senior Software Developer',
       pt: 'Desenvolvedor de Software Sênior',
@@ -15,10 +22,12 @@ const experiences = [
       en: 'Building scalable APIs and microservices architecture for a leading classifieds platform. Working with Go, Kubernetes, and AWS infrastructure.',
       pt: 'Construindo APIs escaláveis e arquitetura de microsserviços para uma plataforma líder de classificados. Trabalhando com Go, Kubernetes e infraestrutura AWS.',
     },
-    location: 'France',
+    location: '🇫🇷 France',
   },
   {
+    logo: worten,
     company: 'Worten',
+    link: 'https://worten.pt',
     role: {
       en: 'Senior Software Developer',
       pt: 'Desenvolvedor de Software Sênior',
@@ -31,10 +40,12 @@ const experiences = [
       en: 'Building scalable e-commerce solutions and microservices architecture. Working with Go, Kubernetes, and AWS infrastructure.',
       pt: 'Construindo soluções de e-commerce escaláveis e arquitetura de microsserviços. Trabalhando com Go, Kubernetes e infraestrutura AWS.',
     },
-    location: 'Portugal',
+    location: '🇵🇹 Portugal',
   },
   {
-    company: 'Previous Company',
+    company: 'Dock',
+    link: 'https://dock.tech',
+    logo: dock,
     role: {
       en: 'Backend Developer',
       pt: 'Desenvolvedor Backend',
@@ -47,23 +58,43 @@ const experiences = [
       en: 'Developed and maintained backend services using Java and Python. Implemented CI/CD pipelines and automated deployment processes.',
       pt: 'Desenvolvi e mantive serviços backend usando Java e Python. Implementei pipelines CI/CD e processos de deployment automatizados.',
     },
-    location: 'Brazil',
+    location: '🇧🇷 Brazil',
   },
   {
-    company: 'Freelance',
+    company: 'Azion',
+    link: 'https://azion.com',
+    logo: azion,
     role: {
-      en: 'Software Consultant',
-      pt: 'Consultor de Software',
+      en: 'Senior Software Engineer',
+      pt: 'Engenheiro de Software Sênior',
     },
     period: {
-      en: '2015 - 2019',
-      pt: '2015 - 2019',
+      en: '2018 - 2019',
+      pt: '2018 - 2019',
     },
     description: {
-      en: 'Provided software consulting services for various clients. Specialized in PHP, Python, and cloud migrations.',
-      pt: 'Prestei serviços de consultoria de software para diversos clientes. Especializado em PHP, Python e migrações para cloud.',
+      en: 'Led the development of load balancer and edge computing solutions using Go and Python. Optimized system performance and scalability.',
+      pt: 'Liderei o desenvolvimento de soluções de balanceamento de carga e edge computing usando Go e Python. Otimizei o desempenho e a escalabilidade do sistema.',
     },
-    location: 'Remote',
+    location: '🇧🇷 Brazil',
+  },
+  {
+    company: 'Dinamize',
+    link: 'https://dinamize.com',
+    logo: dinamize,
+    role: {
+      en: 'Software Developer',
+      pt: 'Desenvolvedor de Software',
+    },
+    period: {
+      en: '2011 - 2018',
+      pt: '2011 - 2018',
+    },
+    location: '🇧🇷 Brazil',
+    description: {
+      en: 'Developed email marketing and automation solutions using PHP and Go. Improved system reliability and user experience.',
+      pt: 'Desenvolvi soluções de email marketing e automação usando PHP e Go. Melhorei a confiabilidade do sistema e a experiência do usuário.',
+    },
   },
 ];
 
@@ -108,7 +139,8 @@ export function ExperienceSection() {
                       {exp.role[language]}
                     </h3>
                     <p className="text-muted-foreground font-medium">
-                      {exp.company} • {exp.location}
+                      <img style={{ display: 'inline-block', marginRight: '8px' }} src={exp.logo} alt="Logo" /> 
+                      <span style={{ display: 'inline-block' }}> <a href={exp.link}>{exp.company}</a> • {exp.location}</span>
                     </p>
                     <p className="text-muted-foreground mt-4 text-sm leading-relaxed">
                       {exp.description[language]}

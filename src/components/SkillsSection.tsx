@@ -2,10 +2,10 @@ import { useLanguage } from '@/lib/i18n';
 import { Badge } from '@/components/ui/badge';
 
 const skills = {
-  languages: ['Go', 'Python', 'Java', 'PHP', 'JavaScript', 'Rust', 'SQL'],
-  cloud: ['AWS', 'Cloudflare', 'DigitalOcean', 'Heroku', 'Terraform', 'Kubernetes'],
-  databases: ['PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'Elasticsearch', 'DynamoDB'],
-  devops: ['Docker', 'Kubernetes', 'CI/CD', 'GitHub Actions', 'GitLab CI', 'Jenkins', 'Ansible', 'Linux'],
+  languages: ['Golang', 'Python', 'C', 'Rust', 'PHP', 'JavaScript', 'Node.js'],
+  cloud: ['AWS', 'Terraform', 'Kubernetes', 'Docker'],
+  databases: ['PostgreSQL', 'MySQL', 'DynamoDB', 'Redis'],
+  devops: ['Git', 'GitHub', 'GitLab', 'Docker', 'Kubernetes', 'TCP/IP', 'DNS', 'HTTP', 'HTTPS', 'gRPC'],
 };
 
 export function SkillsSection() {
