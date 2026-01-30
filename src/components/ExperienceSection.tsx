@@ -1,9 +1,9 @@
 import { useLanguage } from '@/lib/i18n';
-import worten from '@/assets/logos/worten.png';
-import leboncoin from '@/assets/logos/leboncoin.png';
-import dock from '@/assets/logos/dock.png';
-import azion from '@/assets/logos/azion.png';
-import dinamize from '@/assets/logos/dinamize.png';
+import worten from '@/assets/logos/worten.jpeg';
+import leboncoin from '@/assets/logos/leboncoin.jpeg';
+import dock from '@/assets/logos/dock.jpeg';
+import azion from '@/assets/logos/azion.jpeg';
+import dinamize from '@/assets/logos/dinamize.jpeg';
 
 const experiences = [
   {
@@ -22,7 +22,7 @@ const experiences = [
       en: 'Building scalable APIs and microservices architecture for a leading classifieds platform. Working with Go, Kubernetes, and AWS infrastructure.',
       pt: 'Construindo APIs escaláveis e arquitetura de microsserviços para uma plataforma líder de classificados. Trabalhando com Go, Kubernetes e infraestrutura AWS.',
     },
-    location: '🇫🇷 France',
+    location: '🇫🇷',
   },
   {
     logo: worten,
@@ -40,7 +40,7 @@ const experiences = [
       en: 'Building scalable e-commerce solutions and microservices architecture. Working with Go, Kubernetes, and AWS infrastructure.',
       pt: 'Construindo soluções de e-commerce escaláveis e arquitetura de microsserviços. Trabalhando com Go, Kubernetes e infraestrutura AWS.',
     },
-    location: '🇵🇹 Portugal',
+    location: '🇵🇹',
   },
   {
     company: 'Dock',
@@ -58,7 +58,7 @@ const experiences = [
       en: 'Developed and maintained backend services using Java and Python. Implemented CI/CD pipelines and automated deployment processes.',
       pt: 'Desenvolvi e mantive serviços backend usando Java e Python. Implementei pipelines CI/CD e processos de deployment automatizados.',
     },
-    location: '🇧🇷 Brazil',
+    location: '🇧🇷',
   },
   {
     company: 'Azion',
@@ -76,7 +76,7 @@ const experiences = [
       en: 'Led the development of load balancer and edge computing solutions using Go and Python. Optimized system performance and scalability.',
       pt: 'Liderei o desenvolvimento de soluções de balanceamento de carga e edge computing usando Go e Python. Otimizei o desempenho e a escalabilidade do sistema.',
     },
-    location: '🇧🇷 Brazil',
+    location: '🇧🇷',
   },
   {
     company: 'Dinamize',
@@ -90,7 +90,7 @@ const experiences = [
       en: '2011 - 2018',
       pt: '2011 - 2018',
     },
-    location: '🇧🇷 Brazil',
+    location: '🇧🇷',
     description: {
       en: 'Developed email marketing and automation solutions using PHP and Go. Improved system reliability and user experience.',
       pt: 'Desenvolvi soluções de email marketing e automação usando PHP e Go. Melhorei a confiabilidade do sistema e a experiência do usuário.',
@@ -139,8 +139,8 @@ export function ExperienceSection() {
                       {exp.role[language]}
                     </h3>
                     <p className="text-muted-foreground font-medium">
-                      <img style={{ display: 'inline-block', marginRight: '8px' }} src={exp.logo} alt="Logo" /> 
-                      <span style={{ display: 'inline-block' }}> <a href={exp.link}>{exp.company}</a> • {exp.location}</span>
+                      
+                      <span style={{ display: 'inline-block' }}><a href={exp.link}><img className={`w-7 h-7`} style={{ display: 'inline-block', marginRight: '8px' }} src={exp.logo} alt="Logo" />{exp.company}</a> {exp.location}</span>
                     </p>
                     <p className="text-muted-foreground mt-4 text-sm leading-relaxed">
                       {exp.description[language]}
