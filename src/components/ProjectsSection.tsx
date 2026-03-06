@@ -5,45 +5,15 @@ import { useLanguage } from '@/lib/i18n';
 
 const projects = [
   {
-    title: 'Cloud Infrastructure Toolkit',
+    title: 'Khairus',
     description: {
-      en: 'A collection of Terraform modules and scripts for automating cloud infrastructure deployment on AWS and GCP.',
-      pt: 'Uma coleção de módulos Terraform e scripts para automatizar deploy de infraestrutura cloud na AWS e GCP.',
+      en: 'Scheduling system for small businesses, featuring an intuitive interface and client/service management capabilities.',
+      pt: 'Sistema de agendamento para pequenos negocios, com interface intuitiva e recursos de gerenciamento de clientes e serviços.',
     },
-    tech: ['Terraform', 'AWS', 'GCP', 'Go'],
-    github: 'https://github.com/niltonkummer',
-    demo: null,
+    tech: ['Typescript', 'AWS', 'Cloudflare', 'Node.js', 'React', 'PostgreSQL'], 
+    demo: 'https://khairus.com.br',
   },
-  {
-    title: 'Microservices Template',
-    description: {
-      en: 'Production-ready microservices template with Go, featuring health checks, metrics, and distributed tracing.',
-      pt: 'Template de microsserviços pronto para produção com Go, incluindo health checks, métricas e tracing distribuído.',
-    },
-    tech: ['Go', 'Docker', 'Kubernetes', 'Prometheus'],
-    github: 'https://github.com/niltonkummer',
-    demo: null,
-  },
-  {
-    title: 'API Gateway Solution',
-    description: {
-      en: 'High-performance API gateway with rate limiting, authentication, and request transformation capabilities.',
-      pt: 'API gateway de alta performance com rate limiting, autenticação e capacidades de transformação de requisições.',
-    },
-    tech: ['Go', 'Redis', 'PostgreSQL', 'Docker'],
-    github: 'https://github.com/niltonkummer',
-    demo: null,
-  },
-  {
-    title: 'DevOps Automation Suite',
-    description: {
-      en: 'CI/CD pipeline templates and automation scripts for streamlining development workflows.',
-      pt: 'Templates de pipelines CI/CD e scripts de automação para otimizar workflows de desenvolvimento.',
-    },
-    tech: ['GitHub Actions', 'Python', 'Ansible', 'Shell'],
-    github: 'https://github.com/niltonkummer',
-    demo: null,
-  },
+  
 ];
 
 export function ProjectsSection() {
